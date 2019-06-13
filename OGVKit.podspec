@@ -140,6 +140,7 @@ Pod::Spec.new do |s|
     svp8decoder.xcconfig = { 'OTHER_CFLAGS' => '-DOGVKIT_HAVE_VP8_DECODER' }
     svp8decoder.dependency 'OGVKit/Core'
     svp8decoder.dependency 'libvpx', '~>1.7.0'
+    svp8decoder.pod_target_xcconfig = { 'OTHER_CFLAGS' => '-DOGVKIT_HAVE_VP8_DECODER' }
   end
 
   # Audio decoder module subspecs
